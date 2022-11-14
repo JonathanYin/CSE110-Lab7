@@ -45,7 +45,7 @@ function initializeServiceWorker() {
   // We first must register our ServiceWorker here before any of the code in
   // sw.js is executed.
   // B1. TODO - Check if 'serviceWorker' is supported in the current browser
-  if ('serivceWorker' in navigator) {
+  if ('serviceWorker' in navigator) {
     // B2. TODO - Listen for the 'load' event on the window object.
     window.addEventListener('load', () => {
       // Steps B3-B6 will be *inside* the event listener's function created in B2
@@ -102,7 +102,7 @@ async function getRecipes() {
     // A4. TODO - Loop through each recipe in the RECIPE_URLS array constant
     //            declared above
     RECIPE_URLS.forEach(async (URL) => {
-      // A5. TODO - Since we are going to be dealing  with asynchronous code, create
+      // A5. TODO - Since we are going to be dealing with asynchronous code, create
       //            a try / catch block. A6-A9 will be in the try portion, A10-A11
       //            will be in the catch portion.
       try{  
